@@ -1,0 +1,207 @@
+[
+  {
+    "timestamp": "2026-06-18T22:30:01+05:30",
+    "message": "🔍 Fetch started — gameloot.in/product-category/ps5-consoles",
+    "level": "info"
+  },
+  {
+    "timestamp": "2026-06-18T22:30:02+05:30",
+    "message": "✅ HTML received — 200 OK (241ms)",
+    "level": "success"
+  },
+  {
+    "timestamp": "2026-06-18T22:30:02+05:30",
+    "message": "📦 Parsed 2 product cards from page",
+    "level": "info"
+  },
+  {
+    "timestamp": "2026-06-18T22:30:02+05:30",
+    "message": "🔄 Comparing against 1 known products",
+    "level": "info"
+  },
+  {
+    "timestamp": "2026-06-18T22:30:02+05:30",
+    "message": "🚨 NEW PRODUCT: Sony PlayStation 5 Disc Edition Volcanic Red — ₹54,999",
+    "level": "success"
+  },
+  {
+    "timestamp": "2026-06-18T22:30:03+05:30",
+    "message": "📨 Telegram alert sent successfully",
+    "level": "success"
+  },
+  {
+    "timestamp": "2026-06-18T22:30:03+05:30",
+    "message": "💾 Updated products.json (2 products)",
+    "level": "info"
+  },
+  {
+    "timestamp": "2026-06-18T22:30:03+05:30",
+    "message": "📊 Updated status.json and analytics.json",
+    "level": "info"
+  },
+  {
+    "timestamp": "2026-06-18T22:35:01+05:30",
+    "message": "🔍 Fetch started — gameloot.in/product-category/ps5-consoles",
+    "level": "info"
+  },
+  {
+    "timestamp": "2026-06-18T22:35:02+05:30",
+    "message": "✅ HTML received — 200 OK (198ms)",
+    "level": "success"
+  },
+  {
+    "timestamp": "2026-06-18T22:35:02+05:30",
+    "message": "📦 Parsed 2 product cards from page",
+    "level": "info"
+  },
+  {
+    "timestamp": "2026-06-18T22:35:02+05:30",
+    "message": "✓ No new products detected",
+    "level": "info"
+  },
+  {
+    "timestamp": "2026-06-18T22:40:01+05:30",
+    "message": "🔍 Fetch started — gameloot.in/product-category/ps5-consoles",
+    "level": "info"
+  },
+  {
+    "timestamp": "2026-06-18T22:40:01+05:30",
+    "message": "⚠️ Request timeout — retrying (attempt 1/3)",
+    "level": "warn"
+  },
+  {
+    "timestamp": "2026-06-18T22:40:04+05:30",
+    "message": "✅ HTML received — 200 OK (2841ms)",
+    "level": "success"
+  },
+  {
+    "timestamp": "2026-06-18T22:40:04+05:30",
+    "message": "📦 Parsed 2 product cards from page",
+    "level": "info"
+  },
+  {
+    "timestamp": "2026-06-18T22:40:04+05:30",
+    "message": "✓ No new products detected",
+    "level": "info"
+  },
+  {
+    "timestamp": "2026-06-18T17:51:28.468Z",
+    "message": "🔍 Fetch started — gameloot.in/product-category/ps5-consoles",
+    "level": "info"
+  },
+  {
+    "timestamp": "2026-06-18T17:51:29.098Z",
+    "message": "✅ HTML received — 200 OK (589ms)",
+    "level": "success"
+  },
+  {
+    "timestamp": "2026-06-18T17:51:29.163Z",
+    "message": "📦 Parsed 1 product cards from page",
+    "level": "info"
+  },
+  {
+    "timestamp": "2026-06-18T17:51:29.163Z",
+    "message": "🔄 Comparing against 2 known products",
+    "level": "info"
+  },
+  {
+    "timestamp": "2026-06-18T17:51:29.170Z",
+    "message": "🚨 NEW PRODUCT: PlayStation Portal Remote Player PS5 (Pre-owned) — ₹NaN",
+    "level": "success"
+  },
+  {
+    "timestamp": "2026-06-18T17:51:29.171Z",
+    "message": "⚠️ Telegram alert failed: Not configured (missing env vars)",
+    "level": "warn"
+  },
+  {
+    "timestamp": "2026-06-18T17:51:29.172Z",
+    "message": "⚠️ Email alert failed: Not configured (missing env vars)",
+    "level": "warn"
+  },
+  {
+    "timestamp": "2026-06-18T17:51:29.172Z",
+    "message": "⚠️ Discord alert failed: Not configured (missing env vars)",
+    "level": "warn"
+  },
+  {
+    "timestamp": "2026-06-18T17:51:29.172Z",
+    "message": "💾 Updated products.json (1 products)",
+    "level": "info"
+  },
+  {
+    "timestamp": "2026-06-18T17:51:29.175Z",
+    "message": "📊 Updated status.json and analytics.json",
+    "level": "info"
+  },
+  {
+    "timestamp": "2026-06-18T17:52:48.227Z",
+    "message": "🔍 Fetch started — gameloot.in/product-category/ps5-consoles",
+    "level": "info"
+  },
+  {
+    "timestamp": "2026-06-18T17:52:48.733Z",
+    "message": "✅ HTML received — 200 OK (473ms)",
+    "level": "success"
+  },
+  {
+    "timestamp": "2026-06-18T17:52:48.788Z",
+    "message": "📦 Parsed 1 product cards from page",
+    "level": "info"
+  },
+  {
+    "timestamp": "2026-06-18T17:52:48.789Z",
+    "message": "🔄 Comparing against 1 known products",
+    "level": "info"
+  },
+  {
+    "timestamp": "2026-06-18T17:52:48.789Z",
+    "message": "✓ No new products detected",
+    "level": "info"
+  },
+  {
+    "timestamp": "2026-06-18T17:52:48.790Z",
+    "message": "💾 Updated products.json (1 products)",
+    "level": "info"
+  },
+  {
+    "timestamp": "2026-06-18T17:52:48.791Z",
+    "message": "📊 Updated status.json and analytics.json",
+    "level": "info"
+  },
+  {
+    "timestamp": "2026-06-18T18:47:19.528Z",
+    "message": "🔍 Fetch started — gameloot.in/product-category/ps5-consoles",
+    "level": "info"
+  },
+  {
+    "timestamp": "2026-06-18T18:47:20.022Z",
+    "message": "✅ HTML received — 200 OK (472ms)",
+    "level": "success"
+  },
+  {
+    "timestamp": "2026-06-18T18:47:20.053Z",
+    "message": "📦 Parsed 1 product cards from page",
+    "level": "info"
+  },
+  {
+    "timestamp": "2026-06-18T18:47:20.053Z",
+    "message": "🔄 Comparing against 1 known products",
+    "level": "info"
+  },
+  {
+    "timestamp": "2026-06-18T18:47:20.054Z",
+    "message": "✓ No new products detected",
+    "level": "info"
+  },
+  {
+    "timestamp": "2026-06-18T18:47:20.054Z",
+    "message": "💾 Updated products.json (1 products)",
+    "level": "info"
+  },
+  {
+    "timestamp": "2026-06-18T18:47:20.055Z",
+    "message": "📊 Updated status.json and analytics.json",
+    "level": "info"
+  }
+]

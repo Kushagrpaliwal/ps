@@ -1,0 +1,163 @@
+{
+  "responseTimeHistory": [
+    {
+      "time": "22:00",
+      "value": 210
+    },
+    {
+      "time": "22:05",
+      "value": 198
+    },
+    {
+      "time": "22:10",
+      "value": 245
+    },
+    {
+      "time": "22:15",
+      "value": 231
+    },
+    {
+      "time": "22:20",
+      "value": 219
+    },
+    {
+      "time": "22:25",
+      "value": 256
+    },
+    {
+      "time": "22:30",
+      "value": 241
+    },
+    {
+      "time": "22:35",
+      "value": 198
+    },
+    {
+      "time": "22:40",
+      "value": 2841
+    },
+    {
+      "time": "22:45",
+      "value": 215
+    },
+    {
+      "time": "22:50",
+      "value": 227
+    },
+    {
+      "time": "22:55",
+      "value": 201
+    },
+    {
+      "time": "23:00",
+      "value": 189
+    },
+    {
+      "time": "23:05",
+      "value": 241
+    },
+    {
+      "time": "23:21:29",
+      "value": 589
+    },
+    {
+      "time": "23:22:48",
+      "value": 473
+    },
+    {
+      "time": "00:17:20",
+      "value": 472
+    }
+  ],
+  "uptimeHistory": [
+    {
+      "time": "Jun 12",
+      "value": 100
+    },
+    {
+      "time": "Jun 13",
+      "value": 99.8
+    },
+    {
+      "time": "Jun 14",
+      "value": 100
+    },
+    {
+      "time": "Jun 15",
+      "value": 99.5
+    },
+    {
+      "time": "Jun 16",
+      "value": 100
+    },
+    {
+      "time": "Jun 17",
+      "value": 99.9
+    },
+    {
+      "time": "Jun 18",
+      "value": 100
+    }
+  ],
+  "detectionTimeline": [
+    {
+      "time": "Jun 14",
+      "product": "PS5 Slim Digital Edition",
+      "price": "37999"
+    },
+    {
+      "time": "Jun 18",
+      "product": "PS5 Disc Edition Volcanic Red",
+      "price": "54999"
+    },
+    {
+      "time": "18 Jun",
+      "product": "PlayStation Portal Remote Player PS5 (Pre-owned)",
+      "price": ".21999.13999"
+    }
+  ],
+  "notificationHistory": [
+    {
+      "timestamp": "2026-06-14T15:22:00+05:30",
+      "channel": "telegram",
+      "product": "PS5 Slim Digital Edition",
+      "status": "sent",
+      "message": "Alert delivered to Telegram"
+    },
+    {
+      "timestamp": "2026-06-18T22:30:03+05:30",
+      "channel": "telegram",
+      "product": "PS5 Disc Edition Volcanic Red",
+      "status": "sent",
+      "message": "Alert delivered to Telegram"
+    },
+    {
+      "timestamp": "2026-06-18T22:30:04+05:30",
+      "channel": "email",
+      "product": "PS5 Disc Edition Volcanic Red",
+      "status": "sent",
+      "message": "Alert delivered to Gmail"
+    },
+    {
+      "timestamp": "2026-06-18T17:51:29.171Z",
+      "channel": "Telegram",
+      "product": "PlayStation Portal Remote Player PS5 (Pre-owned)",
+      "status": "failed",
+      "message": "Failed: Not configured (missing env vars)"
+    },
+    {
+      "timestamp": "2026-06-18T17:51:29.172Z",
+      "channel": "Email",
+      "product": "PlayStation Portal Remote Player PS5 (Pre-owned)",
+      "status": "failed",
+      "message": "Failed: Not configured (missing env vars)"
+    },
+    {
+      "timestamp": "2026-06-18T17:51:29.172Z",
+      "channel": "Discord",
+      "product": "PlayStation Portal Remote Player PS5 (Pre-owned)",
+      "status": "failed",
+      "message": "Failed: Not configured (missing env vars)"
+    }
+  ]
+}
