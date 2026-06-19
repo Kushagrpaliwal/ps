@@ -1,5 +1,6 @@
 import "dotenv/config";
 import axios, { AxiosError } from "axios";
+import { HttpsProxyAgent } from "https-proxy-agent";
 import * as cheerio from "cheerio";
 import * as fs from "fs";
 import * as path from "path";
@@ -133,8 +134,12 @@ async function fetchWithRetry(
   for (let attempt = 1; attempt <= retries; attempt++) {
     try {
       const start = Date.now();
+      const proxyUrl = process.env.PROXY_URL;
+      const httpsAgent = proxyUrl ? new HttpsProxyAgent(proxyUrl) : undefined;
+      
       const response = await axios.get(url, {
         timeout: REQUEST_TIMEOUT,
+        httpsAgent,
         headers: {
           "User-Agent":
             "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
