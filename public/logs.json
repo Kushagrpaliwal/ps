@@ -1,40 +1,5 @@
 [
   {
-    "timestamp": "2026-06-18T17:51:29.170Z",
-    "message": "🚨 NEW PRODUCT: PlayStation Portal Remote Player PS5 (Pre-owned) — ₹NaN",
-    "level": "success"
-  },
-  {
-    "timestamp": "2026-06-18T17:51:29.171Z",
-    "message": "⚠️ Telegram alert failed: Not configured (missing env vars)",
-    "level": "warn"
-  },
-  {
-    "timestamp": "2026-06-18T17:51:29.172Z",
-    "message": "⚠️ Email alert failed: Not configured (missing env vars)",
-    "level": "warn"
-  },
-  {
-    "timestamp": "2026-06-18T17:51:29.172Z",
-    "message": "⚠️ Discord alert failed: Not configured (missing env vars)",
-    "level": "warn"
-  },
-  {
-    "timestamp": "2026-06-18T17:51:29.172Z",
-    "message": "💾 Updated products.json (1 products)",
-    "level": "info"
-  },
-  {
-    "timestamp": "2026-06-18T17:51:29.175Z",
-    "message": "📊 Updated status.json and analytics.json",
-    "level": "info"
-  },
-  {
-    "timestamp": "2026-06-18T17:52:48.227Z",
-    "message": "🔍 Fetch started — gameloot.in/product-category/ps5-consoles",
-    "level": "info"
-  },
-  {
     "timestamp": "2026-06-18T17:52:48.733Z",
     "message": "✅ HTML received — 200 OK (473ms)",
     "level": "success"
@@ -496,6 +461,41 @@
   },
   {
     "timestamp": "2026-06-19T19:09:49.986Z",
+    "message": "📊 Updated status.json and analytics.json",
+    "level": "info"
+  },
+  {
+    "timestamp": "2026-06-19T20:47:33.680Z",
+    "message": "🔍 Fetch started — gameloot.in/product-category/ps5-consoles",
+    "level": "info"
+  },
+  {
+    "timestamp": "2026-06-19T20:47:34.546Z",
+    "message": "✅ HTML received — 200 OK (852ms)",
+    "level": "success"
+  },
+  {
+    "timestamp": "2026-06-19T20:47:34.555Z",
+    "message": "📦 Parsed 0 product cards from page",
+    "level": "info"
+  },
+  {
+    "timestamp": "2026-06-19T20:47:34.555Z",
+    "message": "🔄 Comparing against 0 known products",
+    "level": "info"
+  },
+  {
+    "timestamp": "2026-06-19T20:47:34.556Z",
+    "message": "✓ No new products detected",
+    "level": "info"
+  },
+  {
+    "timestamp": "2026-06-19T20:47:34.556Z",
+    "message": "💾 Updated products.json (0 products)",
+    "level": "info"
+  },
+  {
+    "timestamp": "2026-06-19T20:47:34.557Z",
     "message": "📊 Updated status.json and analytics.json",
     "level": "info"
   }
