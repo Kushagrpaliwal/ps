@@ -257,7 +257,7 @@ async function main(): Promise<void> {
     };
     writeJSON(STATUS_FILE, status);
     saveLogs();
-    process.exit(1);
+    // process.exit(1); // Do not fail the CI job so we can see logs and commit the offline status
   }
 
   // Load existing products
