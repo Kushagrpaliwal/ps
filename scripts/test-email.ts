@@ -1,24 +1,19 @@
-import { sendNotifications } from "./notifier";
+import "dotenv/config";
+import { sendNotifications } from "./notifier.js";
 
-async function testEmail() {
-  console.log("Testing Gmail notification...");
-  const dummyProduct = {
-    title: "Test PS5 Console (Email Verification)",
+async function test() {
+  console.log("Testing Email notification...");
+  const testProduct = {
+    title: "TEST: PlayStation 5 (Email Test)",
     price: "49990",
-    product_url: "https://gameloot.in/",
-    image_url: "",
+    product_url: "https://gameloot.in",
+    image_url: "https://gameloot.in/wp-content/uploads/2023/02/LogoGameLoot.jpg",
     detected_at: new Date().toISOString(),
-    status: "new" as const,
+    status: "new" as const
   };
-
-  const results = await sendNotifications(dummyProduct);
-  const emailResult = results.find((r) => r.channel === "Email");
   
-  if (emailResult?.success) {
-    console.log("✅ Successfully sent Email!");
-  } else {
-    console.error("❌ Failed to send Email:", emailResult?.error);
-  }
+  const results = await sendNotifications(testProduct);
+  console.log(JSON.stringify(results, null, 2));
 }
 
-testEmail().catch(console.error);
+test().catch(console.error);

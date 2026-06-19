@@ -79,6 +79,14 @@
     {
       "time": "09:41:41",
       "value": 2323
+    },
+    {
+      "time": "10:00:40",
+      "value": 1708
+    },
+    {
+      "time": "10:06:53",
+      "value": 1582
     }
   ],
   "uptimeHistory": [
@@ -126,6 +134,11 @@
       "time": "18 Jun",
       "product": "PlayStation Portal Remote Player PS5 (Pre-owned)",
       "price": ".21999.13999"
+    },
+    {
+      "time": "19 Jun",
+      "product": "PlayStation Portal Remote Player PS5 (Pre-owned)",
+      "price": "13999"
     }
   ],
   "notificationHistory": [
@@ -170,6 +183,20 @@
       "product": "PlayStation Portal Remote Player PS5 (Pre-owned)",
       "status": "failed",
       "message": "Failed: Not configured (missing env vars)"
+    },
+    {
+      "timestamp": "2026-06-19T04:30:40.423Z",
+      "channel": "Email",
+      "product": "PlayStation Portal Remote Player PS5 (Pre-owned)",
+      "status": "failed",
+      "message": "Failed: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-8455382b766sm856851b3a.47 - gsmtp"
+    },
+    {
+      "timestamp": "2026-06-19T04:30:40.423Z",
+      "channel": "Discord",
+      "product": "PlayStation Portal Remote Player PS5 (Pre-owned)",
+      "status": "sent",
+      "message": "Alert delivered to Discord"
     }
   ]
 }
