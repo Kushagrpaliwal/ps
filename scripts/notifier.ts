@@ -16,57 +16,7 @@ interface NotificationResult {
   error?: string;
 }
 
-// === TELEGRAM ===
-async function sendTelegram(product: Product): Promise<NotificationResult> {
-  const token = process.env.TELEGRAM_BOT_TOKEN;
-  const chatId = process.env.TELEGRAM_CHAT_ID;
 
-  if (!token || !chatId) {
-    return { channel: "Telegram", success: false, error: "Not configured (missing env vars)" };
-  }
-
-  const formattedPrice = product.price
-    ? `₹${Number(product.price).toLocaleString("en-IN")}`
-    : "Price N/A";
-
-  const detectedTime = new Date(product.detected_at).toLocaleTimeString("en-IN", {
-    hour12: false,
-    timeZone: "Asia/Kolkata",
-  });
-
-  const message = `
-🚨 *GAMELOOT STOCK ALERT*
-
-*New Product Found*
-
-📦 *Product:*
-${product.title}
-
-💰 *Price:*
-${formattedPrice}
-
-🔗 *Link:*
-${product.product_url}
-
-🕐 *Detected:*
-${detectedTime} IST
-
-_Powered by SentinelX Lite_
-`.trim();
-
-  try {
-    await axios.post(`https://api.telegram.org/bot${token}/sendMessage`, {
-      chat_id: chatId,
-      text: message,
-      parse_mode: "Markdown",
-      disable_web_page_preview: false,
-    });
-    return { channel: "Telegram", success: true };
-  } catch (error) {
-    const err = error as Error;
-    return { channel: "Telegram", success: false, error: err.message };
-  }
-}
 
 // === EMAIL (Gmail SMTP) ===
 async function sendEmail(product: Product): Promise<NotificationResult> {
@@ -192,7 +142,6 @@ export async function sendNotifications(
   product: Product
 ): Promise<NotificationResult[]> {
   const results = await Promise.allSettled([
-    sendTelegram(product),
     sendEmail(product),
     sendDiscord(product),
   ]);

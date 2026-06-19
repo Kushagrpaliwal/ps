@@ -35,7 +35,7 @@ export interface DetectionEvent {
 
 export interface NotificationRecord {
   timestamp: string;
-  channel: "telegram" | "email" | "discord";
+  channel: "email" | "discord";
   product: string;
   status: "sent" | "failed";
   message: string;

@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "SentinelX Lite — PS5 Stock Monitor",
   description:
-    "Zero-cost premium product monitoring agent. Track PS5 availability on GameLoot.in with instant Telegram, Email, and Discord notifications.",
+    "Zero-cost premium product monitoring agent. Track PS5 availability on GameLoot.in with instant Email and Discord notifications.",
   keywords: ["PS5", "stock monitor", "GameLoot", "PlayStation 5", "price tracker"],
   openGraph: {
     title: "SentinelX Lite — PS5 Stock Monitor",

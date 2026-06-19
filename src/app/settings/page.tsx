@@ -72,13 +72,7 @@ export default function SettingsPage() {
         </h2>
         <Separator className="bg-white/5" />
 
-        <ChannelRow
-          icon={<Send className="h-4 w-4 text-blue-400" />}
-          name="Telegram"
-          description="Bot API notifications"
-          configured
-          envVars={["TELEGRAM_BOT_TOKEN", "TELEGRAM_CHAT_ID"]}
-        />
+
         <ChannelRow
           icon={<Mail className="h-4 w-4 text-neon-red" />}
           name="Gmail SMTP"

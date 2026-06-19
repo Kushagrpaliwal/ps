@@ -7,13 +7,11 @@ import { Bell, Send, Mail, MessageCircle, CheckCircle2, XCircle } from "lucide-r
 import { Badge } from "@/components/ui/badge";
 
 const channelIcons: Record<NotificationRecord["channel"], typeof Send> = {
-  telegram: Send,
   email: Mail,
   discord: MessageCircle,
 };
 
 const channelColors: Record<NotificationRecord["channel"], string> = {
-  telegram: "text-blue-400",
   email: "text-neon-red",
   discord: "text-indigo-400",
 };
