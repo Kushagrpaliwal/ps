@@ -1,40 +1,5 @@
 [
   {
-    "timestamp": "2026-06-18T22:30:01+05:30",
-    "message": "🔍 Fetch started — gameloot.in/product-category/ps5-consoles",
-    "level": "info"
-  },
-  {
-    "timestamp": "2026-06-18T22:30:02+05:30",
-    "message": "✅ HTML received — 200 OK (241ms)",
-    "level": "success"
-  },
-  {
-    "timestamp": "2026-06-18T22:30:02+05:30",
-    "message": "📦 Parsed 2 product cards from page",
-    "level": "info"
-  },
-  {
-    "timestamp": "2026-06-18T22:30:02+05:30",
-    "message": "🔄 Comparing against 1 known products",
-    "level": "info"
-  },
-  {
-    "timestamp": "2026-06-18T22:30:02+05:30",
-    "message": "🚨 NEW PRODUCT: Sony PlayStation 5 Disc Edition Volcanic Red — ₹54,999",
-    "level": "success"
-  },
-  {
-    "timestamp": "2026-06-18T22:30:03+05:30",
-    "message": "📨 Telegram alert sent successfully",
-    "level": "success"
-  },
-  {
-    "timestamp": "2026-06-18T22:30:03+05:30",
-    "message": "💾 Updated products.json (2 products)",
-    "level": "info"
-  },
-  {
     "timestamp": "2026-06-18T22:30:03+05:30",
     "message": "📊 Updated status.json and analytics.json",
     "level": "info"
@@ -496,6 +461,41 @@
   },
   {
     "timestamp": "2026-06-19T11:51:11.172Z",
+    "message": "📊 Updated status.json and analytics.json",
+    "level": "info"
+  },
+  {
+    "timestamp": "2026-06-19T14:47:00.806Z",
+    "message": "🔍 Fetch started — gameloot.in/product-category/ps5-consoles",
+    "level": "info"
+  },
+  {
+    "timestamp": "2026-06-19T14:47:03.125Z",
+    "message": "✅ HTML received — 200 OK (2304ms)",
+    "level": "success"
+  },
+  {
+    "timestamp": "2026-06-19T14:47:03.134Z",
+    "message": "📦 Parsed 0 product cards from page",
+    "level": "info"
+  },
+  {
+    "timestamp": "2026-06-19T14:47:03.134Z",
+    "message": "🔄 Comparing against 0 known products",
+    "level": "info"
+  },
+  {
+    "timestamp": "2026-06-19T14:47:03.135Z",
+    "message": "✓ No new products detected",
+    "level": "info"
+  },
+  {
+    "timestamp": "2026-06-19T14:47:03.135Z",
+    "message": "💾 Updated products.json (0 products)",
+    "level": "info"
+  },
+  {
+    "timestamp": "2026-06-19T14:47:03.136Z",
     "message": "📊 Updated status.json and analytics.json",
     "level": "info"
   }
