@@ -183,7 +183,7 @@ function parseProducts(html: string): Omit<Product, "detected_at" | "status">[] 
   const products: Omit<Product, "detected_at" | "status">[] = [];
 
   // WooCommerce product card selectors
-  $("li.product, .product-grid-item, .products .product").each((_i, el) => {
+  $("li.product, .product-grid-item, .products .product, .product_item").each((_i, el) => {
     const $el = $(el);
 
     // Title extraction — try multiple selectors
