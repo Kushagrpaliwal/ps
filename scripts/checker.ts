@@ -1,3 +1,4 @@
+import "dotenv/config";
 import axios, { AxiosError } from "axios";
 import * as cheerio from "cheerio";
 import * as fs from "fs";

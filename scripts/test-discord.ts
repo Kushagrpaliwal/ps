@@ -1,3 +1,4 @@
+import "dotenv/config";
 import { sendNotifications } from "./notifier";
 
 async function testDiscord() {
