@@ -1,6 +1,9 @@
 import "dotenv/config";
-import axios, { AxiosError } from "axios";
-import { HttpsProxyAgent } from "https-proxy-agent";
+import puppeteer from "puppeteer-extra";
+import StealthPlugin from "puppeteer-extra-plugin-stealth";
+
+// Add stealth plugin and use defaults (all evasion techniques)
+puppeteer.use(StealthPlugin());
 import * as cheerio from "cheerio";
 import * as fs from "fs";
 import * as path from "path";
@@ -60,7 +63,7 @@ interface AnalyticsData {
 // === CONFIG ===
 const TARGET_URL =
   "https://gameloot.in/product-category/ps5-consoles/?swoof=1&stock=instock&really_curr_tax=183-product_cat";
-const REQUEST_TIMEOUT = 3000;
+const REQUEST_TIMEOUT = 15000;
 const MAX_RETRIES = 3;
 const MAX_LOGS = 100;
 
@@ -134,28 +137,35 @@ async function fetchWithRetry(
   for (let attempt = 1; attempt <= retries; attempt++) {
     try {
       const start = Date.now();
-      const proxyUrl = process.env.PROXY_URL;
-      const httpsAgent = proxyUrl ? new HttpsProxyAgent(proxyUrl) : undefined;
       
-      const response = await axios.get(url, {
-        timeout: REQUEST_TIMEOUT,
-        httpsAgent,
-        headers: {
-          "User-Agent":
-            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-          Accept:
-            "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
-          "Accept-Language": "en-US,en;q=0.5",
-        },
+      const browser = await puppeteer.launch({
+        headless: "new",
+        args: [
+          "--no-sandbox",
+          "--disable-setuid-sandbox",
+          "--disable-dev-shm-usage",
+          "--disable-accelerated-2d-canvas",
+          "--disable-gpu",
+        ],
       });
+      
+      const page = await browser.newPage();
+      await page.setUserAgent(
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+      );
+      
+      await page.goto(url, { waitUntil: "domcontentloaded", timeout: REQUEST_TIMEOUT });
+      const html = await page.content();
+      await browser.close();
+      
       const responseTime = Date.now() - start;
-      return { html: response.data, responseTime };
+      return { html, responseTime };
     } catch (error) {
-      const axiosError = error as AxiosError;
+      const err = error as Error;
       if (attempt < retries) {
         const delay = Math.pow(2, attempt) * 500; // Exponential backoff: 1s, 2s, 4s
         log(
-          `⚠️ Request failed (attempt ${attempt}/${retries}): ${axiosError.message} — retrying in ${delay}ms`,
+          `⚠️ Request failed (attempt ${attempt}/${retries}): ${err.message} — retrying in ${delay}ms`,
           "warn"
         );
         await new Promise((resolve) => setTimeout(resolve, delay));

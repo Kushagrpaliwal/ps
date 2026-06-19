@@ -40,7 +40,6 @@ jobs:
           GMAIL_USER: ${{ secrets.GMAIL_USER }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           GMAIL_TO: ${{ secrets.GMAIL_TO }}
-          PROXY_URL: ${{ secrets.PROXY_URL }}
 
       - name: 📊 Commit updated data
         run: |
