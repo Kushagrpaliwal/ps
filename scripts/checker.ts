@@ -371,8 +371,38 @@ async function main(): Promise<void> {
   saveLogs();
   console.log("\n✅ Check complete.");
 }
+// === ENTRY POINT ===
+const CHECK_INTERVAL_MS = 5 * 60 * 1000; // 5 minutes
 
-main().catch((err) => {
-  console.error("Fatal error:", err);
-  process.exit(1);
-});
+const isOnceMode = process.argv.includes("--once");
+
+if (isOnceMode) {
+  // Single run (for GitHub Actions cron)
+  main().catch((err) => {
+    console.error("Fatal error:", err);
+    process.exit(1);
+  });
+} else {
+  // Continuous loop mode (for local monitoring)
+  async function loop() {
+    console.log("🔁 SentinelX Monitor started — checking every 5 minutes");
+    console.log("   Press Ctrl+C to stop\n");
+
+    while (true) {
+      try {
+        await main();
+      } catch (err) {
+        console.error("⚠️ Check failed, will retry next cycle:", err);
+      }
+
+      const nextCheck = new Date(Date.now() + CHECK_INTERVAL_MS).toLocaleTimeString("en-IN", {
+        hour12: false,
+        timeZone: "Asia/Kolkata",
+      });
+      console.log(`\n⏳ Next check at ${nextCheck} IST — waiting 5 minutes...\n`);
+      await new Promise((resolve) => setTimeout(resolve, CHECK_INTERVAL_MS));
+    }
+  }
+
+  loop();
+}
