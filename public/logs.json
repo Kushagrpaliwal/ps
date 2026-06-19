@@ -393,5 +393,40 @@
     "timestamp": "2026-06-19T04:36:53.848Z",
     "message": "📊 Updated status.json and analytics.json",
     "level": "info"
+  },
+  {
+    "timestamp": "2026-06-19T05:05:14.582Z",
+    "message": "🔍 Fetch started — gameloot.in/product-category/ps5-consoles",
+    "level": "info"
+  },
+  {
+    "timestamp": "2026-06-19T05:05:15.342Z",
+    "message": "✅ HTML received — 200 OK (745ms)",
+    "level": "success"
+  },
+  {
+    "timestamp": "2026-06-19T05:05:15.351Z",
+    "message": "📦 Parsed 0 product cards from page",
+    "level": "info"
+  },
+  {
+    "timestamp": "2026-06-19T05:05:15.352Z",
+    "message": "🔄 Comparing against 1 known products",
+    "level": "info"
+  },
+  {
+    "timestamp": "2026-06-19T05:05:15.352Z",
+    "message": "✓ No new products detected",
+    "level": "info"
+  },
+  {
+    "timestamp": "2026-06-19T05:05:15.353Z",
+    "message": "💾 Updated products.json (0 products)",
+    "level": "info"
+  },
+  {
+    "timestamp": "2026-06-19T05:05:15.353Z",
+    "message": "📊 Updated status.json and analytics.json",
+    "level": "info"
   }
 ]
