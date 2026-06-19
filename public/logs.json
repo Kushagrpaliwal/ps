@@ -238,5 +238,45 @@
     "timestamp": "2026-06-19T02:50:03.973Z",
     "message": "📊 Updated status.json and analytics.json",
     "level": "info"
+  },
+  {
+    "timestamp": "2026-06-19T04:01:31.502Z",
+    "message": "🔍 Fetch started — gameloot.in/product-category/ps5-consoles",
+    "level": "info"
+  },
+  {
+    "timestamp": "2026-06-19T04:01:32.213Z",
+    "message": "⚠️ Request failed (attempt 1/3): Request failed with status code 403 — retrying in 1000ms",
+    "level": "warn"
+  },
+  {
+    "timestamp": "2026-06-19T04:01:33.535Z",
+    "message": "⚠️ Request failed (attempt 2/3): Request failed with status code 403 — retrying in 2000ms",
+    "level": "warn"
+  },
+  {
+    "timestamp": "2026-06-19T04:01:35.858Z",
+    "message": "❌ Failed to fetch page: Request failed with status code 403",
+    "level": "error"
+  },
+  {
+    "timestamp": "2026-06-19T04:01:35.859Z",
+    "message": "🔄 Comparing against 1 known products",
+    "level": "info"
+  },
+  {
+    "timestamp": "2026-06-19T04:01:35.859Z",
+    "message": "✓ No new products detected",
+    "level": "info"
+  },
+  {
+    "timestamp": "2026-06-19T04:01:35.860Z",
+    "message": "💾 Updated products.json (0 products)",
+    "level": "info"
+  },
+  {
+    "timestamp": "2026-06-19T04:01:35.860Z",
+    "message": "📊 Updated status.json and analytics.json",
+    "level": "info"
   }
 ]
