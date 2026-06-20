@@ -1,40 +1,5 @@
 [
   {
-    "timestamp": "2026-06-19T04:30:37.550Z",
-    "message": "🔍 Fetch started — gameloot.in/product-category/ps5-consoles",
-    "level": "info"
-  },
-  {
-    "timestamp": "2026-06-19T04:30:39.269Z",
-    "message": "✅ HTML received — 200 OK (1708ms)",
-    "level": "success"
-  },
-  {
-    "timestamp": "2026-06-19T04:30:39.299Z",
-    "message": "📦 Parsed 1 product cards from page",
-    "level": "info"
-  },
-  {
-    "timestamp": "2026-06-19T04:30:39.300Z",
-    "message": "🔄 Comparing against 0 known products",
-    "level": "info"
-  },
-  {
-    "timestamp": "2026-06-19T04:30:39.303Z",
-    "message": "🚨 NEW PRODUCT: PlayStation Portal Remote Player PS5 (Pre-owned) — ₹13,999",
-    "level": "success"
-  },
-  {
-    "timestamp": "2026-06-19T04:30:40.423Z",
-    "message": "⚠️ Email alert failed: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-8455382b766sm856851b3a.47 - gsmtp",
-    "level": "warn"
-  },
-  {
-    "timestamp": "2026-06-19T04:30:40.423Z",
-    "message": "📨 Discord alert sent successfully",
-    "level": "success"
-  },
-  {
     "timestamp": "2026-06-19T04:30:40.423Z",
     "message": "💾 Updated products.json (1 products)",
     "level": "info"
@@ -496,6 +461,41 @@
   },
   {
     "timestamp": "2026-06-20T08:16:00.987Z",
+    "message": "📊 Updated status.json and analytics.json",
+    "level": "info"
+  },
+  {
+    "timestamp": "2026-06-20T10:43:32.875Z",
+    "message": "🔍 Fetch started — gameloot.in/product-category/ps5-consoles",
+    "level": "info"
+  },
+  {
+    "timestamp": "2026-06-20T10:43:34.270Z",
+    "message": "✅ HTML received — 200 OK (1380ms)",
+    "level": "success"
+  },
+  {
+    "timestamp": "2026-06-20T10:43:34.279Z",
+    "message": "📦 Parsed 0 product cards from page",
+    "level": "info"
+  },
+  {
+    "timestamp": "2026-06-20T10:43:34.280Z",
+    "message": "🔄 Comparing against 0 known products",
+    "level": "info"
+  },
+  {
+    "timestamp": "2026-06-20T10:43:34.280Z",
+    "message": "✓ No new products detected",
+    "level": "info"
+  },
+  {
+    "timestamp": "2026-06-20T10:43:34.280Z",
+    "message": "💾 Updated products.json (0 products)",
+    "level": "info"
+  },
+  {
+    "timestamp": "2026-06-20T10:43:34.281Z",
     "message": "📊 Updated status.json and analytics.json",
     "level": "info"
   }
