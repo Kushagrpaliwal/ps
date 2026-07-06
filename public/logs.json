@@ -1,40 +1,5 @@
 [
   {
-    "timestamp": "2026-07-05T16:39:07.790Z",
-    "message": "💾 Updated products.json (0 products)",
-    "level": "info"
-  },
-  {
-    "timestamp": "2026-07-05T16:39:07.791Z",
-    "message": "📊 Updated status.json and analytics.json",
-    "level": "info"
-  },
-  {
-    "timestamp": "2026-07-05T17:45:59.513Z",
-    "message": "🔍 Fetch started — gameloot.in/product-category/ps5-consoles",
-    "level": "info"
-  },
-  {
-    "timestamp": "2026-07-05T17:46:02.642Z",
-    "message": "✅ HTML received — 200 OK (3115ms)",
-    "level": "success"
-  },
-  {
-    "timestamp": "2026-07-05T17:46:02.651Z",
-    "message": "📦 Parsed 0 product cards from page",
-    "level": "info"
-  },
-  {
-    "timestamp": "2026-07-05T17:46:02.651Z",
-    "message": "🔄 Comparing against 0 known products",
-    "level": "info"
-  },
-  {
-    "timestamp": "2026-07-05T17:46:02.652Z",
-    "message": "✓ No new products detected",
-    "level": "info"
-  },
-  {
     "timestamp": "2026-07-05T17:46:02.652Z",
     "message": "💾 Updated products.json (0 products)",
     "level": "info"
@@ -496,6 +461,41 @@
   },
   {
     "timestamp": "2026-07-06T22:35:38.610Z",
+    "message": "📊 Updated status.json and analytics.json",
+    "level": "info"
+  },
+  {
+    "timestamp": "2026-07-06T23:43:40.448Z",
+    "message": "🔍 Fetch started — gameloot.in/product-category/ps5-consoles",
+    "level": "info"
+  },
+  {
+    "timestamp": "2026-07-06T23:43:42.306Z",
+    "message": "✅ HTML received — 200 OK (1843ms)",
+    "level": "success"
+  },
+  {
+    "timestamp": "2026-07-06T23:43:42.316Z",
+    "message": "📦 Parsed 0 product cards from page",
+    "level": "info"
+  },
+  {
+    "timestamp": "2026-07-06T23:43:42.316Z",
+    "message": "🔄 Comparing against 0 known products",
+    "level": "info"
+  },
+  {
+    "timestamp": "2026-07-06T23:43:42.317Z",
+    "message": "✓ No new products detected",
+    "level": "info"
+  },
+  {
+    "timestamp": "2026-07-06T23:43:42.317Z",
+    "message": "💾 Updated products.json (0 products)",
+    "level": "info"
+  },
+  {
+    "timestamp": "2026-07-06T23:43:42.318Z",
     "message": "📊 Updated status.json and analytics.json",
     "level": "info"
   }
