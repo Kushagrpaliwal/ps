@@ -1,10 +1,6 @@
 {
   "responseTimeHistory": [
     {
-      "time": "01:45:43",
-      "value": 2222
-    },
-    {
       "time": "02:26:37",
       "value": 2624
     },
@@ -1151,6 +1147,10 @@
     {
       "time": "08:14:45",
       "value": 2642
+    },
+    {
+      "time": "09:03:28",
+      "value": 825
     }
   ],
   "uptimeHistory": [
